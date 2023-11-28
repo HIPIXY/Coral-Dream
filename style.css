@@ -1,0 +1,100 @@
+/* Style untuk body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('background.jpg'); /* Gambar latar belakang */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+/* Style untuk header */
+header {
+    background-color: #67729db7; /* Warna latar belakang header dengan transparansi */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style untuk bagian content */
+section {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Style untuk container gambar */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/* Style untuk kotak gambar */
+.image-box {
+    width: 30%;
+    padding-top: 30%;
+    position: relative;
+    border: 2px solid #67729D;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Efek transisi pada hover */
+}
+
+/* Style untuk efek hover pada kotak gambar */
+.image-box:hover {
+    transform: scale(1.1); /* Memperbesar gambar pada hover */
+}
+
+/* Style untuk gambar di dalam kotak */
+.image-box img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+/* Style untuk tombol */
+button {
+    background-color: #E7BCDE;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Efek transisi pada hover */
+}
+
+/* Style untuk efek hover pada tombol */
+button:hover {
+    background-color: #BB9CC0;
+    box-shadow: 0 0 10px rgba(187, 156, 192, 0.8); /* Efek glow pada hover */
+    filter: brightness(1.2); /* Meningkatkan kecerahan pada hover */
+}
+
+/* Style untuk footer */
+footer {
+    background-color: #67729D;
+    color: #fff;
+    text-align: center;
+    padding: 10px; /* Mengurangi tinggi footer */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design untuk layar berukuran kecil */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+
+    button {
+        padding: 12px 24px;
+    }
+}

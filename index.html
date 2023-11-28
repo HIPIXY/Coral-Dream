@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coral Dream</title>
+    <link rel="stylesheet" href="candy.css"> <!-- Menautkan file stylesheet eksternal -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Menautkan library SweetAlert2 untuk notifikasi -->
+    <script src="candy.js"></script> <!-- Menautkan file script eksternal -->
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+    <!-- Elemen audio untuk lagu dengan kontrol otomatis terputar -->
+    <audio controls autoplay>
+        <source src="Y2meta.app - [no copyright music] 'In Dreamland ' background music (128 kbps).mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <h1>Score: <span id="score">0</span></h1> <!-- Menampilkan skor permainan -->
+    <div id="board"></div> <!-- Elemen div untuk papan permainan -->
+
+    <button onclick="window.location.href='page.html'">Kembali</button> <!-- Tombol untuk kembali ke halaman "page.html" -->
+</body>
+
+</html>

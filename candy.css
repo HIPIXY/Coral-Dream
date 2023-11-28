@@ -1,0 +1,60 @@
+/* Style untuk body */
+body {
+    background: url("./background.jpg") no-repeat center center fixed; /* Mengatur latar belakang dengan gambar dan properti pengulangan dan penempatan */
+    background-size: cover; /* Mengatur ukuran latar belakang agar menutupi seluruh area */
+    font-family: Arial, Helvetica, sans-serif; /* Mengatur jenis font untuk teks */
+    color: white; /* Mengatur warna teks menjadi putih */
+    text-align: center; /* Pusatkan teks secara horizontal */
+}
+
+/* Style untuk papan permainan */
+#board {
+    width: 450px; /* Lebar papan permainan */
+    height: 450px; /* Tinggi papan permainan */
+    background-image: url(bgboard.png); /* Gambar latar belakang papan permainan */
+    background-color: #F3C5FF; /* Warna latar belakang papan permainan */
+    border: 5px solid #8B81BB; /* Border papan permainan */
+    border-radius: 10px; /* Radius sudut border */
+    margin: 0 auto; /* Pusatkan papan permainan secara horizontal */
+    display: flex; /* Gunakan model box flex */
+    flex-wrap: wrap; /* Item yang tidak muat akan meluncur ke baris berikutnya */
+}
+
+/* Style untuk elemen img di dalam papan permainan */
+#board img {
+    width: 50px; /* Lebar gambar item di dalam papan permainan */
+    height: 50px; /* Tinggi gambar item di dalam papan permainan */
+    transition: transform 0.3s ease; /* Efek transisi pada hover */
+}
+
+/* Style untuk efek hover pada gambar item di dalam papan permainan */
+#board img:hover {
+    transform: scale(1.1); /* Memperbesar gambar pada hover */
+}
+
+/* Style untuk tombol */
+button {
+    background-color: #E7BCDE; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks pada tombol */
+    padding: 15px 30px; /* Padding pada tombol */
+    font-size: 18px; /* Ukuran font pada tombol */
+    border: none; /* Tidak ada border pada tombol */
+    border-radius: 5px; /* Radius sudut border tombol */
+    cursor: pointer; /* Tampilkan kursor tangan saat diarahkan ke tombol */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Efek transisi pada hover */
+}
+
+/* Style untuk efek hover pada tombol */
+button:hover {
+    background-color: #BB9CC0; /* Warna latar belakang saat tombol dihover */
+    box-shadow: 0 0 10px rgba(187, 156, 192, 0.8); /* Efek bayangan pada hover */
+    filter: brightness(1.2); /* Meningkatkan kecerahan tombol pada hover */
+}
+
+audio {
+    width: 100%; /* Mengisi lebar 100% dari parent */
+    position: fixed; /* Menempel pada window browser */
+    bottom: 10px; /* Jarak dari bawah 10px */
+    right: 10px; /* Jarak dari kanan 10px */
+    max-width: 200px; /* Lebar maksimum */
+}
